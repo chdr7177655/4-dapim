@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>arrays</title>
+</head>
+<body>
+  <script>
+
+//Ex1:
+//1.
+const daysOfWeek = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+console.log(daysOfWeek)
+//2.
+daysOfWeek.sort()
+console.log(daysOfWeek)
+//3
+function printdaysOfWeek(array){
+ console.log(array)  
+}
+function sortArray(array) {
+   return array.sort()
+}
+
+//Ex2:
+function printValueFromArray(array, number) {
+ if (number >= 0 && number < array.length) {
+    console.log(array[number]);
+  } else {
+    console.log(`Sorry, no value in the array for index number: ${number}`);
+  }
+}
+//Ex3:
+function Value_Array(array) {
+for (let i = 0; i < array.length; i++) {
+ if (array[i] % 2 === 0) {    
+    return "odds"
+}
+return "not odds"
+}
+}
+//Ex4:
+function Value_Array1(array) {
+for (let i = 0; i < array.length; i++) {
+if (array[i] > 10){
+    array[i] += 5 
+}
+    }
+    console.log(array)
+}
+//Ex5:
+function Value_Array_num(array, a){
+if (arraya.includes (a)){
+return "found"
+}
+return "no found"
+}
+//Ex6:
+function Value_Array_num2(array, A, B){
+    if (array[0] == a ){
+    if (array[array.length - 1] === b){
+return true
+    }
+}
+    return false
+}
+
+//Ex7:
+function checkArrayValues(array){
+let smallerThan50 = array.every(val => val < 50);
+let between51to100 = array.every(val => val >= 51 && val <= 100);
+let between101to200 = array.every(val => val >= 101 && val <= 200);
+let greaterThan200 = array.every(val => val > 200);
+
+    if (smallerThan50) {
+    return "smaller than 50";
+  } else if (between51to100) {
+    return "between 51 to 100";
+  } else if (between101to200) {
+    return "between 101 to 200";
+  } else if (greaterThan200) {
+    return "greater than 200";
+  } else {
+    return "No condition is happening";
+  }
+}
+
+
+
+
+
+
+
+  </script>  
+</body>
+</html>

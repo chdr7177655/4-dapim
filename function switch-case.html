@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>function switch-case</title>
+</head>
+<body>
+  <script>
+//Ex 1:
+function get_number_even(num){
+    switch(num % 2){
+            case 0 :
+            return "even"
+            case 1 :
+            return "odd"
+            default :
+            return " no even"    
+    }
+}
+//Ex 2:
+function get_number_psitive(num){
+    switch(num){
+            case 1 :
+            return "positive"
+            case -1 :
+            return "negative"
+            default :
+            return " zero"    
+    }
+}
+//Ex 3:
+function get_number_day(num){
+    switch(num){
+            case 1 :
+            return "Sunday"
+            case 2 :
+            return "Monday"
+            case 3 :
+            return "Tuesday"
+            case 4 :
+            return "Wednesday"
+            case 5 :
+            return "Thursday"
+            case 6 :
+            return "Friday"
+            case 7 :
+            return "Saturday"
+            default:
+            return "Please enter another number"
+    }
+}
+//Ex 4:
+function get_number_month(num){
+    switch(num){
+            case 1 :
+            return "January"
+            break
+            case 2 :
+            return "February"
+            break
+            case 3 :
+            return "March "
+            break
+            case 4 :
+            return "April"
+            break
+            case 5 :
+            return "May"
+            break
+            case 6 :
+            return "June "
+            break
+            case 7 :
+            return "July"
+            break
+            case 8 :
+            return "August"
+            break
+            case 9 :
+            return "Septemner "
+            break
+            case 10 :
+            return "October"
+            break
+            case 11 :
+            return "November "
+            break
+            case 12 :
+            return "December "
+            break
+            default:
+            return  "please enter another number"       
+    }
+}
+//Ex 5:
+function get_letters_vowel(letters){
+    switch(letters){
+            case a :
+            case e :
+            case i :
+            case o :
+            case u :
+            case y :
+        return "The vowel letters"
+        default:
+        return "letters a consonant"
+}
+}
+//Ex 6:
+function get_number(numbers){
+    switch (true){
+           case   numbers <= 20:
+           return "d";
+           break
+           case  numbers <= 55:
+           return "c";
+           break
+           case   numbers <= 70:
+           return "b";
+           break
+           case   numbers < 90:
+           return "a";
+           break
+           case  numbers <= 100:
+           return "a+";
+           break
+           default:
+          alert ("Invalid input")
+}
+}
+//Ex 7:
+function calculate(num1, num2, operations) {
+  switch(operations) {
+    case 1:
+      return num1 + num2;
+    case 2:
+      return num1 - num2;
+    case 3:
+      return num1 / num2;
+    case 4:
+      return num1 * num2;
+    default:
+      return "Invalid operations.";
+
+  }
+}
+
+
+
+
+
+
+
+  </script>  
+</body>
+</html>
